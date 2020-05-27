@@ -38,8 +38,9 @@ it is possible to perform a random walk simulation with each firing steps.
 Unzip this archive file, then copy your own directory which has read/write 
 privilege of your system.
 
-We require the Microsoft Visual Studio 2017 redistributable package.
+We require the Microsoft Visual Studio 2019 redistributable package.
 https://go.microsoft.com/fwlink/?LinkId=746572
+https://aka.ms/vs/16/release/vc_redist.x64.exe
 
 If this is not already installed on your system, it is included as vc_redist.x64.exe 
 in the zip file.
@@ -63,5 +64,5 @@ Creative Commons Attribution Non-Commercial Share Alike
 email: wasaki@cs.shinshu-u.ac.jp
 website: https://sourceforge.net/projects/hips-tools/
 
-Copyright: 2008-2019, Shinshu University, Nagano, Japan.
+Copyright: 2008-2020, Shinshu University, Nagano, Japan.
 
