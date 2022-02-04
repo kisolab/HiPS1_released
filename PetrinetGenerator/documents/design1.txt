@@ -1,0 +1,120 @@
+def MakeFirstLoop(Loopsize):
+    numberofmake = 0
+     while(Numberofmake <= Loopsize)
+    {
+        maketransition
+        vernumlist.add(vernum)
+        vernum++
+        makeplace
+        vernumlist.add(vernum)
+        vernum++
+        numberofmake+=2
+    }
+    Vernum2 = Vernum
+
+    while(Vernum > 1)
+    {
+        arcmake(Vernum2 - 1 To Vernum2)
+        Vernum2--
+    }
+
+    arcmake(Vernum To 1)
+
+
+
+def MakeLoop(Startnum, amount, Endnum)
+    Numberofmake = 0
+    if(Vernum != 1) #初期ループではないループ生成の最初の作業
+    {
+        if(PorTlist[Startnum] =="p")
+        {
+            maketransition
+            PorTlist[Vernum] = "t"
+            nextPorT ="place"
+        }
+        else
+        {
+            makeplace
+            PorTlist[Vernum] = "p"
+            nextPorT ="transition"
+        }
+        arcmake(Startnum To Vernum)
+        Vernum++
+
+    }
+
+    while(Numberofmake <= amount)
+    {
+        if(nextPorT == "place")
+        {
+
+            makeplace
+            nextPorT = "transition"
+            PorTlist[Vernum] = "p"
+        }
+        else
+        {
+
+            maketransition
+            nextPorT = "place"
+            PorTlist[Vernum] = "t"
+        }
+        Vernum++
+        Numberofmake++
+        arcmake(Vernum-1 To Vernum )
+
+    }
+     #最後に指定した頂点へつないで輪にする処理
+    if(nextPorT == "transition")
+    {
+        arcmake( Vernum To Endnum)
+    }
+    else
+    {
+        PorTlist[Vernum] = "p"
+        makeplace
+        Vernum++
+        arcmake(Vernum To Endnum )
+    }
+
+
+    return vernum, PorTlist
+
+def makeVertex(vernum,PorTlist):
+
+    if(PorTlist[vernum] == "p" or NULL)
+    {
+        makeplace
+    }
+    else
+    {
+        maketransition
+    }
+
+
+
+
+
+
+main outputxml:
+    global Vernum = 1
+    global vernumlist
+    Loopsize = random(rangeloopMin ~rangeloopMax)
+    vernumlist = makefirstloop(Vernum,Loopsize)
+     while(頂点数を超えたら出る)
+    {
+        random = vernumlist
+        CPEnt= vernumlist.choice()
+        CPdist = 2 # xは0より大きい
+        CPExi = CPEn + (CPdist-1)
+        vernumlist.remove(CPに使われた頂点の番号)
+        Amount2 = random(rangeloopMin ~ rangeloopMax)
+        vernumlist = MakeLoop(CPExi, Amount2, CpEnt)
+
+    }
+
+    Vernum, PorTlist = MakeLoop(Vernum,Amount)
+
+
+
+

@@ -1,0 +1,147 @@
+共通路の入り口出口を決める関数
+
+1.最初に初期ループ生成
+while(少ない方の頂点の数*2まで回す)
+    2.共通路入口と出口をピックアップする
+    2.1入口を決める(VerTransitionlistの中から存在するやつから探す)
+    2.2出口を決める(入口から距離3個分の場所。また、入口~出口の間はVernumlistからあるものを探すこと)
+    2.2.1入口から一個ずつすすめるたびに見ている頂点がVernumlistにあるかどうか確認
+
+    →あれば前に進む
+    無ければCurrentverを出口とする
+    2.3入口と出口、その間に存在する頂点はVernumlistから削除(例:Id5→＊などにする)
+    3.出口の本数を決める
+    4.出口の本数分だけmakeloopする
+
+     共通路生成
+        CPEnt = random.choice(Vertransitionlist)
+        CPdist = 3
+        Currentver = CPEnt
+        while CPdist > 0:
+
+            currentverの一個後の要素xをvernumlistから参照
+            CurrentIndex =  Vernumlist.index(Currentver)
+            NextIndex = CurrentIndex + 1
+            Vernumlist[CurrentIndex] = '＊'
+            if "Currentver" in Vertransitionliist:
+                Vertransitionlist.Remove('Currentver')
+            Nextver = Vernumlist(NextIndex)
+
+            if Nextver != '＊'
+                もしxがvernumlistにおいて存在すれば、1個進む
+                Currentver = NextVer
+            else:
+                CPexit = Currentver
+                break
+             xがなければCurrentverをCPexitとし、whileから抜ける
+             CPdist = CPdist - 1
+
+
+makeloop(Startver,Endver,Loopsize)
+    Numberofmake = 0
+    Vernum = Vernum+1
+    FirstVernum = Vernum
+    if Startver in Vertransitionlist:
+        while True:
+            #makeplace
+            place = Et.SubElement(page, "place", {"id": "id" + str(Vernum)})
+            place.set("name", str(Vernum))
+            place.set("initialmarking", "0")
+            place.set("portdir", "None")
+            place.set("capacity", "0")
+            Vertexinfomation(place, 222, 221)
+            Vernumlist.append("id" + str(Vernum))
+            Vernum = Vernum + 1
+            #maketransition
+            transition = Et.SubElement(page, "transition", {"id": "id" + str(Vernum)})
+            transition.set("name", str(Vernum))
+            transition.set("portir", "None")
+            Vertexinfomation(transition, 222, 221)
+            Vernumlist.append("id" + str(Vernum))
+            Vertransitionlist.append("id" + str(Vernum))
+            Numberofmake += 2
+            Vernum = Vernum + 1
+            if Numberofmake > size - 1:
+                break
+
+
+
+
+        #makeplace　CPentはトランジションなので、最後はプレースである必要がある
+            place = Et.SubElement(page, "place", {"id": "id" + str(Vernum)})
+            place.set("name", str(Vernum))
+            place.set("initialmarking", "0")
+            place.set("portdir", "None")
+            place.set("capacity", "0")
+            Vertexinfomation(place, 222, 221)
+            Vernumlist.append("id" + str(Vernum))
+    else:
+        while Numberofmake <= size:
+            #maketransition
+            transition = Et.SubElement(page, "transition", {"id": "id" + str(Vernum)})
+            transition.set("name", str(Vernum))
+            transition.set("portir", "None")
+            Vertexinfomation(transition, 222, 221)
+            Vernumlist.append("id" + str(Vernum))
+            Vertransitionlist.append("id" + str(Vernum))
+            Vernum = Vernum + 1
+            #makeplace
+            place = Et.SubElement(page, "place", {"id": "id" + str(Vernum)})
+            place.set("name", str(Vernum))
+            place.set("initialmarking", "0")
+            place.set("portdir", "None")
+            place.set("capacity", "0")
+            Vertexinfomation(place, 222, 221)
+            Vernumlist.append("id" + str(Vernum))
+            Numberofmake += 2
+             if Numberofmake > size:
+                break
+            Vernum = Vernum + 1
+
+
+    Vernum2 = Vernum
+    print(Vernum)
+    #はじめはループの最後の頂点をEndverに接続
+    arc = Et.SubElement(page, "arc", {"id": str(Vernum) + str(Vernum2)})
+    arc.set("source", "id" + str(Vernum2))
+    arc.set("target","id" + str(Endver))
+    arc.set("delay", "0")
+    arc.set("weight", "1")
+    points = Et.SubElement(arc, "points")
+    point = Et.SubElement(points, "point", {"x": "100"})
+    point.set("y", "150")
+    point = Et.SubElement(points, "point", {"x": "100"})
+    point.set("y", "150")
+
+     Vernum2 = Vernum2-1
+    while Vernum2 > FirstVernum:
+    #arcmake(Vernum2 - 1 To Vernum2)
+    # arc
+        arc = Et.SubElement(page, "arc", {"id": str(Vernum) + str(Vernum2)})
+        arc.set("source", "id" + str(Vernum2 - 1))
+        arc.set("target","id" + str(Vernum2))
+        arc.set("delay", "0")
+        arc.set("weight", "1")
+        points = Et.SubElement(arc, "points")
+        point = Et.SubElement(points, "point", {"x": "100"})
+        point.set("y", "150")
+        point = Et.SubElement(points, "point", {"x": "100"})
+        point.set("y", "150")
+
+        Vernum2 = Vernum2-1
+
+
+
+    #最後に共通路出口からFIrstVernumに接続
+
+    arc = Et.SubElement(page, "arc", {"id": str(Vernum) + str(Vernum2)})
+    arc.set("source", "id" + str(Startver))
+    arc.set("target", "id"　+ str(FirstVernum))
+    arc.set("delay", "0")
+    arc.set("weight", "1")
+    points = Et.SubElement(arc, "points")
+    point = Et.SubElement(points, "point", {"x": "100"})
+    point.set("y", "150")
+    point = Et.SubElement(points, "point", {"x": "100"})
+    point.set("y", "150")
+    return Vernumlist
