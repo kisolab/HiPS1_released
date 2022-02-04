@@ -64,9 +64,3 @@ Creative Commons Attribution Non-Commercial Share Alike
 email: wasaki@cs.shinshu-u.ac.jp
 website: https://sourceforge.net/projects/hips-tools/
 
-<<<<<<< HEAD
-Copyright: 2008-2022, Shinshu University, Nagano, Japan.
-=======
-Copyright: 2008-2021, Shinshu University, Nagano, Japan.
->>>>>>> 7e7b060585e57c7cd2194f05b8539cf664d60d3a
-
