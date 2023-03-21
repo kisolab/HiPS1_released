@@ -20,6 +20,8 @@ it is possible to perform a random walk simulation with each firing steps.
   S-invariant)
 - Structural Properties Checking for P/T-net (Structurally Bounded, 
   (Partially) Conservative, (Partially) Repetitive, and (Partially) Consistent)
+- Subclass structure detection with known reachability criteria: FCF, BCF, NDC, NIC, TC, SC, TCC and SCC
+- Structure Detection Function for Potential L3/L2 Liveness
 - Behavioral Analysis for P/T-net (Reachability, Deadlock, Reversibility and 
   Synchronic Distances)
 - Liveness and Safeness Properties Checking for Free-Choice (Subclass) net
