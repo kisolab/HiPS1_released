@@ -10,6 +10,7 @@ functioned of static/dynamic analysis: T-invariant detection, Reachability
 path analysis, deadlock state detection, and k-boundedness analysis. Also, 
 it is possible to perform a random walk simulation with each firing steps.
 
+- GitHub https://github.com/kisolab/HiPS1_released/
 - SourceForge http://sourceforge.net/projects/hips-tools/
 - introduction video https://youtu.be/usF1JrQegOE
 
