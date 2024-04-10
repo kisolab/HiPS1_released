@@ -33,7 +33,7 @@ it is possible to perform a random walk simulation with each firing steps.
 
 ## Documentation / samples
 
-- users manual : https://github.com/kisolab/HiPS1_released/tree/master/Documents
+- users manual : https://kisolab.github.io/HiPS/Users_Manual_en_for_1.x.html
 - model examples : https://sourceforge.net/projects/hips-tools/files/version%201.x/examples/
 
 ## Installation instructions
