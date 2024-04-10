@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)https://hips-tools.sourceforge.net/wiki/index.php/Users_Manual_(en)_for_1.x -->
+<html lang="en" dir="ltr" class="client-js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Users Manual (en) for 1.x - HiPS tools</title>
+
+<meta name="generator" content="MediaWiki 1.18.3">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="https://hips-tools.sourceforge.net/wiki/index.php?title=Users_Manual_(en)_for_1.x&amp;action=edit">
+<link rel="edit" title="Edit" href="https://hips-tools.sourceforge.net/wiki/index.php?title=Users_Manual_(en)_for_1.x&amp;action=edit">
+<link rel="shortcut icon" href="https://hips-tools.sourceforge.net/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="https://hips-tools.sourceforge.net/wiki/opensearch_desc.php" title="HiPS tools (en)">
+<link rel="EditURI" type="application/rsd+xml" href="http://hips-tools.sourceforge.net/wiki/api.php?action=rsd">
+<link rel="copyright" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+<link rel="alternate" type="application/atom+xml" title="HiPS tools Atom feed" href="https://hips-tools.sourceforge.net/wiki/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="stylesheet" href="./Users Manual (en) for 1.x_files/load.php">
+<style type="text/css" media="all">.mw-collapsible-toggle{float:right} li .mw-collapsible-toggle{float:none} .mw-collapsible-toggle-li{list-style:none}
+
+/* cache key: h742094_hips-tools:resourceloader:filter:minify-css:4:4250852ed2349a0d4d0fc6509a3e7d4c */
+</style><style type="text/css" media="all">.js-messagebox{margin:1em 5%;padding:0.5em 2.5%;border:1px solid #ccc;background-color:#fcfcfc;font-size:0.8em}.js-messagebox .js-messagebox-group{margin:1px;padding:0.5em 2.5%;border-bottom:1px solid #ddd}.js-messagebox .js-messagebox-group:last-child{border-bottom:thin none transparent}
+
+/* cache key: h742094_hips-tools:resourceloader:filter:minify-css:4:8b08bdc91c52a9ffba396dccfb5b473c */
+</style><style type="text/css" media="all">.suggestions{overflow:hidden;position:absolute;top:0px;left:0px;width:0px;border:none;z-index:1099;padding:0;margin:-1px -1px 0 0} html > body .suggestions{margin:-1px 0 0 0}.suggestions-special{position:relative;background-color:Window;font-size:0.8em;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0;margin-top:-2px;display:none;padding:0.25em 0.25em;line-height:1.25em}.suggestions-results{background-color:white;background-color:Window;font-size:0.8em;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0}.suggestions-result{color:black;color:WindowText;margin:0;line-height:1.5em;padding:0.01em 0.25em;text-align:left}.suggestions-result-current{background-color:#4C59A6;background-color:Highlight;color:white;color:HighlightText}.suggestions-special .special-label{font-size:0.8em;color:gray;text-align:left}.suggestions-special .special-query{color:black;font-style:italic;text-align:left}.suggestions-special .special-hover{background-color:silver}.suggestions-result-current .special-label,.suggestions-result-current .special-query{color:white;color:HighlightText}.autoellipsis-matched,.highlight{font-weight:bold}
+
+/* cache key: h742094_hips-tools:resourceloader:filter:minify-css:4:1421bbe1922a44daa3fbb100d858b3d8 */
+</style><style type="text/css" media="all">#mw-panel.collapsible-nav div.portal{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAAABCAMAAAA7MLYKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEtQTFRF29vb2tra4ODg6urq5OTk4uLi6+vr7e3t7Ozs8PDw5+fn4+Pj4eHh3d3d39/f6Ojo5eXl6enp8fHx8/Pz8vLy7+/v3Nzc2dnZ2NjYnErj7QAAAD1JREFUeNq0wQUBACAMALDj7hf6JyUFGxzEnYhC9GaNPG1xVffGDErk/iCigLl1XV2xM49lfAxEaSM+AQYA9HMKuv4liFQAAAAASUVORK5CYII=);background-image:url(http://hips-tools.sourceforge.net/wiki/extensions/Vector/modules/images/portal-break.png?2010-01-20T20:31:40Z)!ie;background-position:left top;background-repeat:no-repeat;padding:0.25em 0 !important;margin:-11px 9px 10px 11px}#mw-panel.collapsible-nav div.portal h5{color:#4D4D4D;font-weight:normal;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA9QTFRFeXl53d3dmpqasbGx////GU0iEgAAAAV0Uk5T/////wD7tg5TAAAAK0lEQVQI12NwgQIG0hhCDAwMTCJAhqMCA4MiWEoIJABiOCooQhULi5BqMgB2bh4svs8t+QAAAABJRU5ErkJggg==) left center no-repeat;background:url(http://hips-tools.sourceforge.net/wiki/extensions/Vector/modules/images/open.png?2010-12-16T19:33:20Z) left center no-repeat!ie;padding:4px 0 3px 1.5em;margin-bottom:0px}#mw-panel.collapsible-nav div.collapsed h5{color:#0645AD;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAxQTFRF3d3deXl5////nZ2dQA6SoAAAAAN0Uk5T//8A18oNQQAAADNJREFUeNpiYEIDDMQKMKALMDOgCTDCRWACcBG4AEwEIcDITEAFuhnotmC4g4EEzwEEGAADqgHmQSPJKgAAAABJRU5ErkJggg==) left center no-repeat;background:url(http://hips-tools.sourceforge.net/wiki/extensions/Vector/modules/images/closed-ltr.png?2010-12-16T19:33:20Z) left center no-repeat!ie;margin-bottom:0px}#mw-panel.collapsible-nav div h5:hover{cursor:pointer;text-decoration:none}#mw-panel.collapsible-nav div.collapsed h5:hover{text-decoration:underline}#mw-panel.collapsible-nav div.portal div.body{background:none !important;padding-top:0px;display:none}#mw-panel.collapsible-nav div.persistent div.body{display:block}#mw-panel.collapsible-nav div.first h5{display:none}#mw-panel.collapsible-nav div.persistent h5{background:none !important;padding-left:0.7em;cursor:default}#mw-panel.collapsible-nav div.portal div.body ul li{padding:0.25em 0}#mw-panel.collapsible-nav div.first{background-image:none;margin-top:0px}#mw-panel.collapsible-nav div.persistent div.body{margin-left:0.5em}
+
+/* cache key: h742094_hips-tools:resourceloader:filter:minify-css:4:dd7bc63734b78fddc03c039f04d5168c */
+</style><meta name="ResourceLoaderDynamicStyles" content="">
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}a.new,#quickbar a.new{color:#ba0000}
+
+/* cache key: h742094_hips-tools:resourceloader:filter:minify-css:4:c88e2bcd56513749bec09a7e29cb3ffa */
+</style>
+<script src="./Users Manual (en) for 1.x_files/load(1).php"></script><script src="./Users Manual (en) for 1.x_files/load(2).php"></script>
+<script>if(window.mw){
+	mw.config.set({"wgCanonicalNamespace": "", "wgCanonicalSpecialPageName": false, "wgNamespaceNumber": 0, "wgPageName": "Users_Manual_(en)_for_1.x", "wgTitle": "Users Manual (en) for 1.x", "wgCurRevisionId": 389, "wgArticleId": 22, "wgIsArticle": true, "wgAction": "view", "wgUserName": "Wasaki", "wgUserGroups": ["bureaucrat", "sysop", "*", "user", "autoconfirmed"], "wgCategories": [], "wgBreakFrames": false, "wgRestrictionEdit": [], "wgRestrictionMove": [], "wgVectorEnabledModules": {"collapsiblenav": true, "collapsibletabs": true, "editwarning": false, "expandablesearch": false, "footercleanup": false, "sectioneditlinks": false, "simplesearch": true, "experiments": true}});
+}
+</script><script>if(window.mw){
+	mw.loader.load(["mediawiki.page.startup"]);
+}
+</script><script type="text/javascript" src="./Users Manual (en) for 1.x_files/load(3).php"></script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/wiki/skins/vector/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Users_Manual_en_for_1_x action-view skin-vector" data-new-gr-c-s-check-loaded="14.1117.0" data-gr-ext-installed="">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<!-- content -->
+		<div id="content">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;" class="js-messagebox"></div>
+						<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading">Users Manual (en) for 1.x</h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+								<!-- tagline -->
+				<div id="siteSub">From HiPS tools</div>
+				<!-- /tagline -->
+								<!-- subtitle -->
+				<div id="contentSub"></div>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav">
+					Jump to: <a href="https://hips-tools.sourceforge.net/wiki/index.php/Users_Manual_(en)_for_1.x#mw-head">navigation</a>,
+					<a href="https://hips-tools.sourceforge.net/wiki/index.php/Users_Manual_(en)_for_1.x#p-search">search</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodycontent -->
+				<div lang="en" dir="ltr" class="mw-content-ltr"><p>Japanese Version→<a href="https://hips-tools.sourceforge.net/wiki/index.php/Users_Manual_(jp)_for_1.x" title="Users Manual (jp) for 1.x">Users Manual (jp) for 1.x</a>
+</p>
+<table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2><span class="toctoggle">&nbsp;[<a href="https://hips-tools.sourceforge.net/wiki/index.php/Users_Manual_(en)_for_1.x#" class="internal" id="togglelink">hide</a>]&nbsp;</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="https://hips-tools.sourceforge.net/wiki/index.php/Users_Manual_(en)_for_1.x#How_to_Write_the_model"><span class="tocnumber">1</span> <span class="toctext">How to Write the model</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="https://hips-tools.sourceforge.net/wiki/index.php/Users_Manual_(en)_for_1.x#Configuration_of_the_main_screen"><span class="tocnumber">1.1</span> <span class="toctext">Configuration of the main screen</span></a>
+<ul>
+<li class="toclevel-3 tocsection-3"><a href="https://hips-tools.sourceforge.net/wiki/index.php/Users_Manual_(en)_for_1.x#Tool_bar"><span class="tocnumber">1.1.1</span> <span class="toctext">Tool bar</span></a></li>
+<li class="toclevel-3 tocsection-4"><a href="https://hips-tools.sourceforge.net/wiki/index.php/Users_Manual_(en)_for_1.x#Menu_bar"><span class="tocnumber">1.1.2</span> <span class="toctext">Menu bar</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-5"><a href="https://hips-tools.sourceforge.net/wiki/index.php/Users_Manual_(en)_for_1.x#Model_design"><span class="tocnumber">1.2</span> <span class="toctext">Model design</span></a>
+<ul>
+<li class="toclevel-3 tocsection-6"><a href="https://hips-tools.sourceforge.net/wiki/index.php/Users_Manual_(en)_for_1.x#Make_sub_page"><span class="tocnumber">1.2.1</span> <span class="toctext">Make sub page</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="https://hips-tools.sourceforge.net/wiki/index.php/Users_Manual_(en)_for_1.x#How_to_use_the_simulation_capabilities"><span class="tocnumber">2</span> <span class="toctext">How to use the simulation capabilities</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="https://hips-tools.sourceforge.net/wiki/index.php/Users_Manual_(en)_for_1.x#How_to_use_the_analysis_functions"><span class="tocnumber">3</span> <span class="toctext">How to use the analysis functions</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="https://hips-tools.sourceforge.net/wiki/index.php/Users_Manual_(en)_for_1.x#Dynamic_analyzer"><span class="tocnumber">3.1</span> <span class="toctext">Dynamic analyzer</span></a>
+<ul>
+<li class="toclevel-3 tocsection-10"><a href="https://hips-tools.sourceforge.net/wiki/index.php/Users_Manual_(en)_for_1.x#Reachability_Graph_analysis.28Bounded.29"><span class="tocnumber">3.1.1</span> <span class="toctext">Reachability Graph analysis(Bounded)</span></a></li>
+<li class="toclevel-3 tocsection-11"><a href="https://hips-tools.sourceforge.net/wiki/index.php/Users_Manual_(en)_for_1.x#Coverability_Graph_analysis_.28Unbounded_.CF.89-trans..29"><span class="tocnumber">3.1.2</span> <span class="toctext">Coverability Graph analysis (Unbounded ω-trans.)</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="https://hips-tools.sourceforge.net/wiki/index.php/Users_Manual_(en)_for_1.x#Extended_Coverability_Graph_analysis_.28Unbounded_N.2A-trans..29"><span class="tocnumber">3.1.3</span> <span class="toctext">Extended Coverability Graph analysis (Unbounded N*-trans.)</span></a></li>
+<li class="toclevel-3 tocsection-13"><a href="https://hips-tools.sourceforge.net/wiki/index.php/Users_Manual_(en)_for_1.x#Deadlock_analysis"><span class="tocnumber">3.1.4</span> <span class="toctext">Deadlock analysis</span></a></li>
+<li class="toclevel-3 tocsection-14"><a href="https://hips-tools.sourceforge.net/wiki/index.php/Users_Manual_(en)_for_1.x#k-bounded_analysis"><span class="tocnumber">3.1.5</span> <span class="toctext">k-bounded analysis</span></a></li>
+<li class="toclevel-3 tocsection-15"><a href="https://hips-tools.sourceforge.net/wiki/index.php/Users_Manual_(en)_for_1.x#Reversibility_analysis"><span class="tocnumber">3.1.6</span> <span class="toctext">Reversibility analysis</span></a></li>
+<li class="toclevel-3 tocsection-16"><a href="https://hips-tools.sourceforge.net/wiki/index.php/Users_Manual_(en)_for_1.x#Synchronic_Distance_and_Fairness_analysis"><span class="tocnumber">3.1.7</span> <span class="toctext">Synchronic Distance and Fairness analysis</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-17"><a href="https://hips-tools.sourceforge.net/wiki/index.php/Users_Manual_(en)_for_1.x#Structure_analyzer"><span class="tocnumber">3.2</span> <span class="toctext">Structure analyzer</span></a>
+<ul>
+<li class="toclevel-3 tocsection-18"><a href="https://hips-tools.sourceforge.net/wiki/index.php/Users_Manual_(en)_for_1.x#T-invariant"><span class="tocnumber">3.2.1</span> <span class="toctext">T-invariant</span></a></li>
+<li class="toclevel-3 tocsection-19"><a href="https://hips-tools.sourceforge.net/wiki/index.php/Users_Manual_(en)_for_1.x#S-invariant"><span class="tocnumber">3.2.2</span> <span class="toctext">S-invariant</span></a></li>
+<li class="toclevel-3 tocsection-20"><a href="https://hips-tools.sourceforge.net/wiki/index.php/Users_Manual_(en)_for_1.x#Structurally_Analayzer"><span class="tocnumber">3.2.3</span> <span class="toctext">Structurally Analayzer</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-21"><a href="https://hips-tools.sourceforge.net/wiki/index.php/Users_Manual_(en)_for_1.x#Liveness_and_Safeness_in_Free-Choice.28FC.29_net"><span class="tocnumber">3.3</span> <span class="toctext">Liveness and Safeness in Free-Choice(FC) net</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-22"><a href="https://hips-tools.sourceforge.net/wiki/index.php/Users_Manual_(en)_for_1.x#Exhausted_Process_Trace_Generation"><span class="tocnumber">4</span> <span class="toctext">Exhausted Process Trace Generation</span></a></li>
+<li class="toclevel-1 tocsection-23"><a href="https://hips-tools.sourceforge.net/wiki/index.php/Users_Manual_(en)_for_1.x#LTL_Model_Checker"><span class="tocnumber">5</span> <span class="toctext">LTL Model Checker</span></a></li>
+</ul>
+</td></tr></tbody></table>
+<h1><span class="editsection">[<a href="https://hips-tools.sourceforge.net/wiki/index.php?title=Users_Manual_(en)_for_1.x&amp;action=edit&amp;section=1" title="Edit section: How to Write the model">edit</a>]</span> <span class="mw-headline" id="How_to_Write_the_model">How to Write the model</span></h1>
+<h2><span class="editsection">[<a href="https://hips-tools.sourceforge.net/wiki/index.php?title=Users_Manual_(en)_for_1.x&amp;action=edit&amp;section=2" title="Edit section: Configuration of the main screen">edit</a>]</span> <span class="mw-headline" id="Configuration_of_the_main_screen">Configuration of the main screen</span></h2>
+<p><a href="https://hips-tools.sourceforge.net/wiki/index.php/File:main-window.png" class="image"><img alt="main-window.png" src="./Users Manual (en) for 1.x_files/300px-main-window.png" width="300" height="249"></a>
+</p>
+<ul><li>Main screen of HiPS is composed of four panes.
+</li></ul>
+<p><br>
+①Structure of the Petri net that is currently being edited
+</p><p>②Attribute of an selected element(place, arc ,transition, sub page)
+</p>
+<ul><li> You can edit the label of the element etc.
+</li></ul>
+<p>③Petri net editing screen
+</p>
+<ul><li> Page of Petri nets is displayed in the tab.
+</li><li> When the element of Petri Nets is selected, the edge becomes blue and selected elements(place, arc ,transition etc) are displayed in the second pane.
+</li><li> It is referred to as the canvas in this document.
+</li></ul>
+<p>④Firing history etc.
+</p>
+<h3><span class="editsection">[<a href="https://hips-tools.sourceforge.net/wiki/index.php?title=Users_Manual_(en)_for_1.x&amp;action=edit&amp;section=3" title="Edit section: Tool bar">edit</a>]</span> <span class="mw-headline" id="Tool_bar">Tool bar</span></h3>
+<p><a href="https://hips-tools.sourceforge.net/wiki/index.php/File:tool-bar.png" class="image"><img alt="tool-bar.png" src="./Users Manual (en) for 1.x_files/tool-bar.png" width="422" height="32"></a>
+</p><p>Names of various buttons on the toolbar and functions (From left to right).
+</p><p>(1)Select button
+</p>
+<ul><li>While selecting the Select button, you can select an element on the canvas. In addition, you also can  select multiple elements by dragging.
+</li></ul>
+<p>(2)Place button
+</p>
+<ul><li>While selecting the Place button, you can add a new place in its place by clicking on the canvas
+</li></ul>
+<p>.
+(3)Transition button
+</p>
+<ul><li>While selecting the Transition button, you can add a new transition in its place by clicking on the canvas.
+</li></ul>
+<p>.
+(4)Arc button
+</p>
+<ul><li>While selecting the Arc button, you can link a transition and a place by an arc on the canvas.
+</li><li>You can add an arc by clicking on a transition from a place you want to connect in order.
+</li></ul>
+<p>(5)Scaling button
+</p>
+<ul><li>You can scale Petori nets on the canvas.
+</li></ul>
+<p>(6)Hand tool button
+</p>
+<ul><li>You can move the position of the entire canvas by clicking on the canvas.
+</li></ul>
+<p>(7)Stepping simulation button
+</p>
+<ul><li>When Stepping simulation button is selected, the canvas becomes a simulation mode, and you can run the random firing simulation of Petri nets in the design.
+</li></ul>
+<p>(8)Stopping simulation
+</p>
+<ul><li>You can return to design mode from simulation mode.
+</li></ul>
+<h3><span class="editsection">[<a href="https://hips-tools.sourceforge.net/wiki/index.php?title=Users_Manual_(en)_for_1.x&amp;action=edit&amp;section=4" title="Edit section: Menu bar">edit</a>]</span> <span class="mw-headline" id="Menu_bar">Menu bar</span></h3>
+<p><a href="https://hips-tools.sourceforge.net/wiki/index.php/File:menu-bar.png" class="image"><img alt="menu-bar.png" src="./Users Manual (en) for 1.x_files/menu-bar.png" width="198" height="64"></a>
+</p><p>Menu list of HiPS
+</p>
+<ol><li>File
+<ul><li>New Net&nbsp;: Create new net
+</li><li>open   &nbsp;: Read Petri net HiPS files that are saved in xml format
+</li><li>close  &nbsp;: 
+</li><li>Save   &nbsp;: Save to overwrite
+</li><li>Save As&nbsp;: 
+</li><li>Exit   &nbsp;: Exit the HiPs
+</li></ul>
+</li><li>Edit
+<ul><li>New Page         &nbsp;: Create new page
+</li><li>Undo(Ctrl+Z)     &nbsp;: 
+</li><li>Redo(Ctrl+Y)     &nbsp;: 
+</li><li>Cut(Ctrl+X)      &nbsp;: 
+</li><li>Copy(Ctrl+C)     &nbsp;: 
+</li><li>Paste(Ctrl+V)    &nbsp;: 
+</li><li>Delete(Del)      &nbsp;: 
+</li><li>SelectAll(Ctrl+A)&nbsp;: 
+</li></ul>
+</li><li>Tool
+<ul><li>Cancel              
+</li><li>SnapShot           &nbsp;: Create a screenshot of the Petri net on the canvas you are currently viewing
+</li><li>IncidenceMatrix    &nbsp;: Display incidence matrix of Petri net in tabular format or text format
+</li><li>Structural Property&nbsp;: Static analysis
+</li><li>T-invariant        &nbsp;: Analyze the T-invariant of Petri nets on the canvas you are currently viewing
+</li><li>Behavioral Property&nbsp;: Dynamic analysis
+</li><li>Reachability Graph with Delay&nbsp;: Reachability analysis(Bounded)
+</li><li>Reachability Graph with Delay for Unbounded&nbsp;: Coverablity analysis(Unbounded)
+</li><li>Deadlock           &nbsp;: Deadlock analysis
+</li><li>Bounded            &nbsp;: Bounded analysis
+</li><li>Reversibility      &nbsp;: Reversibility analysis
+</li><li>FC/AC Liveness/Safeness Check&nbsp;: FC/AC Active safety checker
+</li></ul>
+</li><li>Help
+<ul><li>Manual       &nbsp;: Display manual
+</li><li>HiPS Web Page&nbsp;: Display HiPs project page on sourceforge
+</li><li>Version      &nbsp;: Display version information
+</li></ul>
+</li></ol>
+<h2><span class="editsection">[<a href="https://hips-tools.sourceforge.net/wiki/index.php?title=Users_Manual_(en)_for_1.x&amp;action=edit&amp;section=5" title="Edit section: Model design">edit</a>]</span> <span class="mw-headline" id="Model_design">Model design</span></h2>
+<ol><li>Create new Petrinet xml file or new page
+<dl><dd>File-&gt;New Net
+</dd><dd>Edit-&gt;New Page
+</dd></dl>
+</li><li>Add place and transition
+<dl><dd>Select the Place button(Transition button)
+</dd><dd>While selecting the button, you can add a new place(transition) in its place by clicking on the canvas
+</dd></dl>
+</li><li>Add arc
+<dl><dd>While selecting the Arc button, when you click the Place(Transition) order and Transition(Place), they are bridged by an arc between the elements.
+</dd><dd>In addition, place and place or transition and transition can't connect by arc
+</dd></dl>
+</li><li>Installation of token
+<dl><dd>While selecting the Select button, click on the place you want to set the token to selected state on the canvas. (When a element is selected, the edge becomes blue.)
+</dd><dd>Enter the number of token to "InitialMarking" in the place property settings screen (second pane of the main screen).
+</dd><dd><a href="https://hips-tools.sourceforge.net/wiki/index.php/File:property-initialmarking.png" class="image"><img alt="property-initialmarking.png" src="./Users Manual (en) for 1.x_files/property-initialmarking.png" width="260" height="156"></a>
+</dd></dl>
+</li><li>Set weight of arc
+<dl><dd>While selecting the Select button, click on the arc you want to set the weight to selected state on the canvas. (When a element is selected, the edge becomes blue.)
+</dd><dd>Enter the number of weights to "weight" in the second pane of the main screen.
+</dd><dd><a href="https://hips-tools.sourceforge.net/wiki/index.php/File:property-weight.png" class="image"><img alt="property-weight.png" src="./Users Manual (en) for 1.x_files/property-weight.png" width="260" height="120"></a>
+</dd></dl>
+</li><li>Set label of element
+<dl><dd> For each element of Petri net such as place and transition, you can set the label different from id of the element. (But you can't set arc.)
+</dd><dd>While selecting the Select button, click on the place or transition you want to set the label to selected state on the canvas. (When a element is selected, the edge becomes blue.)
+</dd><dd>Enter the label to "Name" in the second pane of the main screen.
+</dd><dd><a href="https://hips-tools.sourceforge.net/wiki/index.php/File:property-name.png" class="image"><img alt="property-name.png" src="./Users Manual (en) for 1.x_files/property-name.png" width="263" height="124"></a>
+</dd></dl>
+</li></ol>
+<h3><span class="editsection">[<a href="https://hips-tools.sourceforge.net/wiki/index.php?title=Users_Manual_(en)_for_1.x&amp;action=edit&amp;section=6" title="Edit section: Make sub page">edit</a>]</span> <span class="mw-headline" id="Make_sub_page">Make sub page</span></h3>
+<p>Describes a method for manufacturing a hierarchical Petri net(sub-page).
+</p>
+<ol><li>Introduction of Sub-pages
+<dl><dd>On main Petri net screen design, select File→New→NewPage, make new page. At that time, Petri net design canvas will be in the form tab, and Petri nets were designed on the page by selecting the tab will appear.
+</dd><dd><a href="https://hips-tools.sourceforge.net/wiki/index.php/File:create-subpage-tab.png" class="image"><img alt="create-subpage-tab.png" src="./Users Manual (en) for 1.x_files/600px-create-subpage-tab.png" width="600" height="497"></a>
+</dd></dl>
+</li><li>Sub-page design
+<dl><dd>In each sub-page, it is necessary to specify the port to the element.　This port is that the input and output port to connect with the main Petri net.
+</dd><dd>You can be set place or transition　to the port.　So, it is possible to set input and output ports of the plurality to one of sub-page.
+</dd></dl>
+</li><li>Port Settings
+<dl><dd>Select an element on the canvas of the sub-page,　and edits the "PortDir" of property (second pane of the main screen). Set "None" if you do not have anything set, set "In" if you want to set as an input port, set "Out" if you want to set as an output port.
+</dd><dd><a href="https://hips-tools.sourceforge.net/wiki/index.php/File:create-subpage-setting.png" class="image"><img alt="create-subpage-setting.png" src="./Users Manual (en) for 1.x_files/600px-create-subpage-setting.png" width="600" height="497"></a>
+</dd><dd><br>
+</dd><dd><a href="https://hips-tools.sourceforge.net/wiki/index.php/File:create-subpage-setting-2.png" class="image"><img alt="create-subpage-setting-2.png" src="./Users Manual (en) for 1.x_files/600px-create-subpage-setting-2.png" width="600" height="497"></a>
+</dd></dl>
+</li><li>Insert Sub-page
+<dl><dd>Configure at least one for each sub-page input and output ports,　open the canvas you want to install a sub-page.
+</dd><dd>In the ① pane of the main screen,　the structure of the Petri net that is being edited are marked. Drag and drop to the ③ pane from ① pane, which was designed as a sub-net. Then, the sub-page will be added to the canvas.　It is not possible to insert　page the port is not set as a sub-page.
+</dd><dd><a href="https://hips-tools.sourceforge.net/wiki/index.php/File:create-subpage-insert.png" class="image"><img alt="create-subpage-insert.png" src="./Users Manual (en) for 1.x_files/600px-create-subpage-insert.png" width="600" height="497"></a>
+</dd></dl>
+</li></ol>
+<h1><span class="editsection">[<a href="https://hips-tools.sourceforge.net/wiki/index.php?title=Users_Manual_(en)_for_1.x&amp;action=edit&amp;section=7" title="Edit section: How to use the simulation capabilities">edit</a>]</span> <span class="mw-headline" id="How_to_use_the_simulation_capabilities">How to use the simulation capabilities</span></h1>
+<ol><li>Simulation of Petri net
+<dl><dd>Designed Petri nets can be simulated on HiPS. In this simulation, transition to fire as the operation of the transition firing is red, and marked token in place transitions.
+</dd><dd><a href="https://hips-tools.sourceforge.net/wiki/index.php/File:simulation-1.png" class="image"><img alt="simulation-1.png" src="./Users Manual (en) for 1.x_files/600px-simulation-1.png" width="600" height="497"></a>
+</dd><dd><br>
+</dd><dd><a href="https://hips-tools.sourceforge.net/wiki/index.php/File:simulation-2.png" class="image"><img alt="simulation-2.png" src="./Users Manual (en) for 1.x_files/600px-simulation-2.png" width="600" height="497"></a>
+</dd></dl>
+</li><li>Stepping simulation button 
+<dl><dd>Designed Petri nets can be simulated by Stepping simulation button that is also button(7) on the toolbar.
+</dd><dd>When you press Stepping simulation button, canvas switch to simulation mode. Simulation where the token moves actual start. But, if it becomes impossible to fire in the middle, you will not be able to simulate more.
+</dd></dl>
+</li><li>Log in simulation
+<dl><dd>During simulation,　ｆiring sequence of transitions that fire so far is retained.　In the fourth pane of the main screen, transitions fired is output each time you press Stepping simulation button.
+</dd></dl>
+</li><li>Sub-page during simulation
+<dl><dd>It is also possible simulation of hierarchical Petri nets. When token enters the hierarchical portion, simulation is performed automatically in the sub-page, and token output. Simulation is performed in random firing even in the sub-page, If there is a firing sequence of several, it is impossible to know what will be output in any firing sequence. In addition, confirmation of the firing sequence is possible, because it is output to the log.
+</dd><dd><br>
+</dd><dd><a href="https://hips-tools.sourceforge.net/wiki/index.php/File:simulation-3.png" class="image"><img alt="simulation-3.png" src="./Users Manual (en) for 1.x_files/600px-simulation-3.png" width="600" height="497"></a>
+</dd></dl>
+</li></ol>
+<h1><span class="editsection">[<a href="https://hips-tools.sourceforge.net/wiki/index.php?title=Users_Manual_(en)_for_1.x&amp;action=edit&amp;section=8" title="Edit section: How to use the analysis functions">edit</a>]</span> <span class="mw-headline" id="How_to_use_the_analysis_functions">How to use the analysis functions</span></h1>
+<p>The description of the function of various analysis on HiPS. All analysis functions are available from the Tool→Behavioral Property or Tool→Structual Property in the menu bar. 
+</p>
+<h2><span class="editsection">[<a href="https://hips-tools.sourceforge.net/wiki/index.php?title=Users_Manual_(en)_for_1.x&amp;action=edit&amp;section=9" title="Edit section: Dynamic analyzer">edit</a>]</span> <span class="mw-headline" id="Dynamic_analyzer">Dynamic analyzer</span></h2>
+<h3><span class="editsection">[<a href="https://hips-tools.sourceforge.net/wiki/index.php?title=Users_Manual_(en)_for_1.x&amp;action=edit&amp;section=10" title="Edit section: Reachability Graph analysis(Bounded)">edit</a>]</span> <span class="mw-headline" id="Reachability_Graph_analysis.28Bounded.29">Reachability Graph analysis(Bounded)</span></h3>
+<p>When the firing sequence to convert the marking<i>M<sub>0</sub></i> to marking<i>M<sub>n</sub></i> is exist,　marking<i>M<sub>n</sub></i> has reachable from marking<i>M<sub>0</sub></i>.
+In net(<i>N,M<sub>0</sub></i>), the set of all markings that reachability from <i>M<sub>0</sub></i>　noted　<i>R</i>(<i>N,M<sub>0</sub></i>).
+Reachability problem of Petri nets is a problem　that demand whether it is <i>M<sub>n</sub></i>∈<i>R</i>(<i>N,M<sub>0</sub></i>) for marking<i>M<sub>n</sub></i> in in net(<i>N,M<sub>0</sub></i>).
+Reachability analysis on HiPS enumerates 
+all marking reachability from the initial marking the transition relation between markings. But, it is impossible to apply for an unbounded net.
+<br><br>
+</p><p><a href="https://hips-tools.sourceforge.net/wiki/index.php/File:reachability.png" class="image"><img alt="reachability.png" src="./Users Manual (en) for 1.x_files/reachability.png" width="518" height="494"></a>
+</p>
+<ol><li>des(0,7,8) respectively corresponds the initial state, the number of state transition relation, the number of marking.
+</li><li>Next seven lines represent the relationship between the state transition.
+</li><li>Under number-&gt;Marking represents the markings corresponding to the state number.
+</li></ol>
+<h3><span class="editsection">[<a href="https://hips-tools.sourceforge.net/wiki/index.php?title=Users_Manual_(en)_for_1.x&amp;action=edit&amp;section=11" title="Edit section: Coverability Graph analysis (Unbounded ω-trans.)">edit</a>]</span> <span class="mw-headline" id="Coverability_Graph_analysis_.28Unbounded_.CF.89-trans..29">Coverability Graph analysis (Unbounded ω-trans.)</span></h3>
+<p>If marking<i>M<sub>1</sub></i> satisfies the condition to be <i>M<sub>1</sub>(p)</i>≧<i>M(p)</i> in <i>R(N,M<sub>0</sub></i>) exists for all place p in the net, marking<i>M</i> in a Petri net<i>(N,M<sub>0</sub>)</i> is coverable.
+Coverage analyzer represent the transition of marking as a finite graph structure by introducing ω to marking capable of covering for unbounded net. Reachability marking from the initial marking, the transition between marking is listed.
+<br><br>
+<a href="https://hips-tools.sourceforge.net/wiki/index.php/File:coverability.png" class="image"><img alt="coverability.png" src="./Users Manual (en) for 1.x_files/coverability.png" width="518" height="494"></a>
+</p>
+<ol><li>des(0,7,8) respectively corresponds the initial state, the number of state transition relation, the number of marking. 
+</li><li>Next seven lines represent the relationship between the state transition. 
+</li><li>Under number-&gt;Marking represents the markings corresponding to the state number. Because it is unbounded, marking that token would increase infinitely represented using ω.
+</li></ol>
+<h3><span class="editsection">[<a href="https://hips-tools.sourceforge.net/wiki/index.php?title=Users_Manual_(en)_for_1.x&amp;action=edit&amp;section=12" title="Edit section: Extended Coverability Graph analysis (Unbounded N*-trans.)">edit</a>]</span> <span class="mw-headline" id="Extended_Coverability_Graph_analysis_.28Unbounded_N.2A-trans..29"> Extended Coverability Graph analysis (Unbounded N*-trans.)</span></h3>
+<p>TBA
+</p>
+<h3><span class="editsection">[<a href="https://hips-tools.sourceforge.net/wiki/index.php?title=Users_Manual_(en)_for_1.x&amp;action=edit&amp;section=13" title="Edit section: Deadlock analysis">edit</a>]</span> <span class="mw-headline" id="Deadlock_analysis">Deadlock analysis</span></h3>
+<p>When there is no transition can fire, the marking is deadlock.
+The deadlock analyzer　analyze whether the reachability to the depth specified in the form,　and find the markings that are deadlocked.
+When Marking that is deadlocked is found, display the firing sequence leading up to it with its marking.
+<br><br>
+<a href="https://hips-tools.sourceforge.net/wiki/index.php/File:deadlock.png" class="image"><img alt="deadlock.png" src="./Users Manual (en) for 1.x_files/deadlock.png" width="518" height="494"></a>
+</p>
+<ol><li>You can specify the depth to deadlock analyze in the field of Depth.
+</li><li>If firing sequence that leads to a deadlock exists more than one, display the firing sequence and marking one of them.
+</li></ol>
+<h3><span class="editsection">[<a href="https://hips-tools.sourceforge.net/wiki/index.php?title=Users_Manual_(en)_for_1.x&amp;action=edit&amp;section=14" title="Edit section: k-bounded analysis">edit</a>]</span> <span class="mw-headline" id="k-bounded_analysis">k-bounded analysis</span></h3>
+<p>When the number of tokens in each place does not exceed a finite number k, Petri net is called bounded or　k-bounded　simply　in any marking reachability from <i>M<sub>0</sub></i>,
+Bounded analysis analyzes the boundedness to the depth specified in the form.
+<br><br>
+<a href="https://hips-tools.sourceforge.net/wiki/index.php/File:bounded.png" class="image"><img alt="bounded.png" src="./Users Manual (en) for 1.x_files/bounded.png" width="518" height="494"></a>
+</p>
+<ol><li>You can specify the depth of the analysis of boundedness in the field Depth.
+</li><li>Display the marking obtained results were analyzed boundedness under the k-bounded.
+</li></ol>
+<h3><span class="editsection">[<a href="https://hips-tools.sourceforge.net/wiki/index.php?title=Users_Manual_(en)_for_1.x&amp;action=edit&amp;section=15" title="Edit section: Reversibility analysis">edit</a>]</span> <span class="mw-headline" id="Reversibility_analysis">Reversibility analysis</span></h3>
+<p>If reachability is <i>M<sub>0</sub></i> from<i> M</i> for all marking of <i>R(N,M<sub>0</sub></i>), Petri net <i>(N,M<sub>0</sub>)</i> is called reversible.
+It is always possible to go back to the initial marking, if the net is reversible.
+</p><p><a href="https://hips-tools.sourceforge.net/wiki/index.php/File:reversibility-3.png" class="image"><img alt="reversibility-3.png" src="./Users Manual (en) for 1.x_files/600px-reversibility-3.png" width="600" height="522"></a>
+</p>
+<ol><li>Reversibility analysis stat button
+</li><li>It is possible to choose which was the sum of permutation invariant, or which was alone permutation invariant. Need to be checked either.
+</li><li>Check box for parallel processing
+</li><li>Cancel button of the analysis
+</li><li>Progress bar
+</li><li>Play and pause button
+</li><li>Display remaining time
+</li><li>Now, display whether pause or during the analysis
+</li><li>Refresh the text box of the log
+</li><li>Refresh the the color of the table, the color of the net figure
+</li><li>Visibility of the progress bar
+</li><li>Visibility of the log
+</li><li>Ignite sequentially firing sequence of the row that was pressed (Ignition scenario)
+</li><li>Colors of all transitions included in the press line is changed
+</li><li>A line is a Firing sequence of one．
+</li><li>There is one transition at one cell．Color of transitions of selected net is changed.
+</li><li>Log space of ignition scenario．Display marking and fired transitions．By default, initial marking and the order of the place and is displayed.
+</li></ol>
+<h3><span class="editsection">[<a href="https://hips-tools.sourceforge.net/wiki/index.php?title=Users_Manual_(en)_for_1.x&amp;action=edit&amp;section=16" title="Edit section: Synchronic Distance and Fairness analysis">edit</a>]</span> <span class="mw-headline" id="Synchronic_Distance_and_Fairness_analysis">Synchronic Distance and Fairness analysis</span></h3>
+<p>Using the synchronic distance, it is possible to quantify the degree of interdependence of events between the two in Condition / Event systems. Display in a grid format for the presence of fairness of two types and the following values ​​of the synchronization distance in the "synchronization distance and fairness analyzer".
+</p>
+<ul><li>B-fair net
+</li></ul>
+<p>Two transitions are said to be in a B-fair relation if the other is not firing is bounded. A Petrin net(<i>N,M<sub>0</sub></i>) is said to be a B-fair net if every pair of transitions in the net are in a B-fair relation.
+</p>
+<ul><li>Unconditionally fair net
+</li></ul>
+<p>A firing sequence <i>σ</i> is said to be unconditionally fair if it is finite or every transition in the net appears infinitely often in <i>σ</i>. A Petrin net(<i>N,M<sub>0</sub></i>) is said to be an unconditionally fair net if every firing sequence <i>σ</i> from <i>M</i> in <i>R</i>(<i>M<sub>0</sub></i>) is unconditionally fair.
+<br><br>
+<a href="https://hips-tools.sourceforge.net/wiki/index.php/File:SD1.png" class="image"><img alt="SD1.png" src="./Users Manual (en) for 1.x_files/SD1.png" width="611" height="433"></a>
+<br><br>
+When you Synchronic Distance and Fairness analysis, the above screen is displayed. Analysis result of the synchronic distance is displayed in the cell. Analysis results of fairness is displayed in the text field.
+<br><br>
+<a href="https://hips-tools.sourceforge.net/wiki/index.php/File:SynchronicDistance1.png" class="image"><img alt="SynchronicDistance1.png" src="./Users Manual (en) for 1.x_files/SynchronicDistance1.png" width="615" height="431"></a>
+<br><br>
+</p>
+<ol><li>View synchronic distance in the rows and columns of the transition in the net. "-" Means that the synchronic distance analysis of the same transition between is not performed. If synchronic distance is finite, cell color become blue. If synchronic distance is 0, cell color become red.
+</li><li>The view to the cell value of the synchronic distance of all in the "All" button click.
+</li><li>The delete to the cell value of the synchronic distance of all in the "Clear" button click.
+</li><li>Show ID and name of transition, structurally bounded and fairness.
+</li></ol>
+<p><br>
+<a href="https://hips-tools.sourceforge.net/wiki/index.php/File:SynchronicDistance2.png" class="image"><img alt="SynchronicDistance2.png" src="./Users Manual (en) for 1.x_files/SynchronicDistance2.png" width="611" height="433"></a>
+<br><br>
+The figure above is the case you click a cell "t4" part of the line. Only synchronic distance of the clicked line is displayed.<br>
+It appears in the text field as shown in the figure on "Bounded Fair Net" case net of the analysis target is a B-fair net, and "Unconditional Fair Net" the case of unconditional equity net.<br>
+</p><p>By clicking on the value of the synchronic distance, change the color of the transition of Petri nets. Synchronic distance value is changed to yellow-green in the case of finite, it is changed to purple otherwise.<br>
+<a href="https://hips-tools.sourceforge.net/wiki/index.php/File:colorSD1.png" class="image"><img alt="colorSD1.png" src="./Users Manual (en) for 1.x_files/250px-colorSD1.png" width="250" height="144"></a>  <a href="https://hips-tools.sourceforge.net/wiki/index.php/File:colorSD2.png" class="image"><img alt="colorSD2.png" src="./Users Manual (en) for 1.x_files/250px-colorSD2.png" width="250" height="148"></a>
+</p>
+<h2><span class="editsection">[<a href="https://hips-tools.sourceforge.net/wiki/index.php?title=Users_Manual_(en)_for_1.x&amp;action=edit&amp;section=17" title="Edit section: Structure analyzer">edit</a>]</span> <span class="mw-headline" id="Structure_analyzer">Structure analyzer</span></h2>
+<h3><span class="editsection">[<a href="https://hips-tools.sourceforge.net/wiki/index.php?title=Users_Manual_(en)_for_1.x&amp;action=edit&amp;section=18" title="Edit section: T-invariant">edit</a>]</span> <span class="mw-headline" id="T-invariant">T-invariant</span></h3>
+<p>When let <i>A</i> be incidence matrices of Petri net, and let <i>x</i> be firing count vector, integer solution <i>x</i> of <i>A<sup>T</sup>x = 0</i> is called T-invariant.
+<br><br>
+<a href="https://hips-tools.sourceforge.net/wiki/index.php/File:t-invariant-1.png" class="image"><img alt="t-invariant-1.png" src="./Users Manual (en) for 1.x_files/t-invariant-1.png" width="537" height="318"></a>
+<br><br>
+When you run a T-invariant analysis, the above screen will appear.
+Users can choose the output format button on the "Text" and, "Table".
+<br><br>
+<a href="https://hips-tools.sourceforge.net/wiki/index.php/File:t-invariant-2.png" class="image"><img alt="t-invariant-2.png" src="./Users Manual (en) for 1.x_files/600px-t-invariant-2.png" width="600" height="291"></a>
+<br><br>
+If you select "table", the above figure is output.
+Each invariant is expressed on a per-row basis.
+By pressing the button of "view" in the column　of "ColorView", the invariant of the row that was pressed will be reflected in the net.
+<br><br>
+<a href="https://hips-tools.sourceforge.net/wiki/index.php/File:t-invariant-3.png" class="image"><img alt="t-invariant-3.png" src="./Users Manual (en) for 1.x_files/600px-t-invariant-3.png" width="600" height="497"></a>
+<br><br>
+<a href="https://hips-tools.sourceforge.net/wiki/index.php/File:t-invariant-4.png" class="image"><img alt="t-invariant-4.png" src="./Users Manual (en) for 1.x_files/t-invariant-4.png" width="537" height="318"></a>
+<br><br>
+If you select "text", the above figure is output.
+<br><br>
+<a href="https://hips-tools.sourceforge.net/wiki/index.php/File:t-invariant-5.png" class="image"><img alt="t-invariant-5.png" src="./Users Manual (en) for 1.x_files/t-invariant-5.png" width="537" height="318"></a>
+<br><br>
+If you analyze T-invariant in Petri net T invariant does not exist, the above screen will appear.
+</p>
+<h3><span class="editsection">[<a href="https://hips-tools.sourceforge.net/wiki/index.php?title=Users_Manual_(en)_for_1.x&amp;action=edit&amp;section=19" title="Edit section: S-invariant">edit</a>]</span> <span class="mw-headline" id="S-invariant">S-invariant</span></h3>
+<p>When let <i>A</i> be incidence matrices of Petri net, and let <i>y</i> be firing count vector, integer solution <i>y</i> of <i>Ay = 0</i> is called S-invariant.<br>
+We can analyze S-invariant with the same procedures as T-invariant analysis.
+</p>
+<h3><span class="editsection">[<a href="https://hips-tools.sourceforge.net/wiki/index.php?title=Users_Manual_(en)_for_1.x&amp;action=edit&amp;section=20" title="Edit section: Structurally Analayzer">edit</a>]</span> <span class="mw-headline" id="Structurally_Analayzer">Structurally Analayzer</span></h3>
+<p>Structurally Analyzer analyze the structural properties of the Petri net.<br>
+Structural Property depends on the topological structure of the Petri net.They are independent of the initial marking in the sense that these properties hold for any initial marking or are concerned with the existence of certain firing sequences from some initial marking.<br>
+It is possible to analyze 7 properties from incidence matrix and its associated homogeneous equations or inequalities. So, Petri net of interest must be pure.<br>
+</p>
+<ul><li>Structurally Bounded
+</li></ul>
+<p>The Petri Net is said to be structurally bounded if it is bounded for any finite initial marking.
+</p>
+<ul><li>(Partially) Conservative
+</li></ul>
+<p>The Petri net is said to be (partially) conservative if there exists a positive integer for every(some) place p such that the weighted sum of tokens.
+</p>
+<ul><li>(Partially) Repetitive
+</li></ul>
+<p>The Petri net is said to be (partially) repetitive if there exists a marking and a fire sequence from a initial marking such that every(some) transition occurs infinitely often in a firing sequence.
+</p>
+<ul><li>(Partially) Consistent
+</li></ul>
+<p>The Petri net is said to be (partially) consitent if there exists a marking and a fire sequence from a initial marking back to a initial marking such that every(some) transition occurs at least once in a firing sequence.<br>
+<br>
+<a href="https://hips-tools.sourceforge.net/wiki/index.php/File:StructurallyAnalyzer-1.png" class="image"><img alt="StructurallyAnalyzer-1.png" src="./Users Manual (en) for 1.x_files/StructurallyAnalyzer-1.png" width="604" height="274"></a><br>
+<br>
+The above screen appears when you run a structurally analyzer.　The table has columns about Structurally bounded, conservative, partially conservative, repetitive, partially repetitive, consistent, partially consistent from left. And the table has cell where you want to display the analysis result of the property of each.<br>
+<br>
+<a href="https://hips-tools.sourceforge.net/wiki/index.php/File:StructurallyAnalyzer-2.png" class="image"><img alt="StructurallyAnalyzer-2.png" src="./Users Manual (en) for 1.x_files/StructurallyAnalyzer-2.png" width="606" height="275"></a><br>
+<br>
+When you press the Start button, and then press the button of each property, analysis of properties that are turned ON begins.
+The results are displayed in the cell as shown on the above screen at the end of the analysis.
+if the Petri net has property， '+' is displayed, and if the Petri net does not have property, '-' is displayed.<br>
+<br>
+Structurally Analyzer has counter example feedback function.
+To analyze in a state which the items of "Analyze counter example" are checked, It can analyze counter example of structurally bounded, conservative and consistent. <br>
+By clicking on the cell that result is '-' from above screen, places and transitions and sub-pages of the cause is colored.<br>
+</p>
+<ul><li>Structurally Unbounded
+</li></ul>
+<p>Transitions of cause are colored purple. If the transitions continue to fire, the Petri net will be unbounded.<br>
+<a href="https://hips-tools.sourceforge.net/wiki/index.php/File:StructurallyAnalyzer-3.png" class="image"><img alt="StructurallyAnalyzer-3.png" src="./Users Manual (en) for 1.x_files/250px-StructurallyAnalyzer-3.png" width="250" height="128"></a><a href="https://hips-tools.sourceforge.net/wiki/index.php/File:StructurallyAnalyzer-4.png" class="image"><img alt="StructurallyAnalyzer-4.png" src="./Users Manual (en) for 1.x_files/250px-StructurallyAnalyzer-4.png" width="250" height="210"></a><br>
+<br>
+</p>
+<ul><li>Unconservative
+</li></ul>
+<p>The Petri net does not have conservative means that the weighted sum of tokens is increased or decreased.<br>
+By transitions that are colored red firing, the weighted sum of tokens is increased. By transitions that are colored blue firing, the weighted sum of tokens is decreased.<br>
+<a href="https://hips-tools.sourceforge.net/wiki/index.php/File:StructurallyAnalyzer-5.png" class="image"><img alt="StructurallyAnalyzer-5.png" src="./Users Manual (en) for 1.x_files/250px-StructurallyAnalyzer-5.png" width="250" height="210"></a><a href="https://hips-tools.sourceforge.net/wiki/index.php/File:StructurallyAnalyzer-6.png" class="image"><img alt="StructurallyAnalyzer-6.png" src="./Users Manual (en) for 1.x_files/250px-StructurallyAnalyzer-6.png" width="250" height="171"></a><br>
+<br>
+</p>
+<ul><li>Unconsistent
+</li></ul>
+<p>The Petri net does not have consistent means that, there dose not exist a marking and a fire sequence from a initial marking back to a initial marking such that every(some) transition occurs at least once in a firing sequence.<br>
+When every transitions is fired, it color places that the number of tokens is increased or decreased compared to the marking.
+Places the number of tokens increases are colored red, and places the number of tokens decreases are colored blue.<br>
+<a href="https://hips-tools.sourceforge.net/wiki/index.php/File:StructurallyAnalyzer-7.png" class="image"><img alt="StructurallyAnalyzer-7.png" src="./Users Manual (en) for 1.x_files/250px-StructurallyAnalyzer-7.png" width="250" height="205"></a><a href="https://hips-tools.sourceforge.net/wiki/index.php/File:StructurallyAnalyzer-8.png" class="image"><img alt="StructurallyAnalyzer-8.png" src="./Users Manual (en) for 1.x_files/250px-StructurallyAnalyzer-8.png" width="250" height="177"></a><br>
+<br>
+</p>
+<h2><span class="editsection">[<a href="https://hips-tools.sourceforge.net/wiki/index.php?title=Users_Manual_(en)_for_1.x&amp;action=edit&amp;section=21" title="Edit section: Liveness and Safeness in Free-Choice(FC) net">edit</a>]</span> <span class="mw-headline" id="Liveness_and_Safeness_in_Free-Choice.28FC.29_net"> Liveness and Safeness in Free-Choice(FC) net </span></h2>
+<p>TBA
+</p><p><br>
+</p>
+<h1><span class="editsection">[<a href="https://hips-tools.sourceforge.net/wiki/index.php?title=Users_Manual_(en)_for_1.x&amp;action=edit&amp;section=22" title="Edit section: Exhausted Process Trace Generation">edit</a>]</span> <span class="mw-headline" id="Exhausted_Process_Trace_Generation"> Exhausted Process Trace Generation </span></h1>
+<p>TBA
+</p>
+<h1><span class="editsection">[<a href="https://hips-tools.sourceforge.net/wiki/index.php?title=Users_Manual_(en)_for_1.x&amp;action=edit&amp;section=23" title="Edit section: LTL Model Checker">edit</a>]</span> <span class="mw-headline" id="LTL_Model_Checker"> LTL Model Checker </span></h1>
+<p>TBA
+</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 94/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key h742094_hips-tools:pcache:idhash:22-0!*!0!!en!2!* and timestamp 20230803234711 -->
+</div>				<!-- /bodycontent -->
+								<!-- printfooter -->
+				<div class="printfooter">
+				Retrieved from "<a href="http://hips-tools.sourceforge.net/wiki/index.php?title=Users_Manual_(en)_for_1.x&amp;oldid=389">http://hips-tools.sourceforge.net/wiki/index.php?title=Users_Manual_(en)_for_1.x&amp;oldid=389</a>"				</div>
+				<!-- /printfooter -->
+												<!-- catlinks -->
+				<div id="catlinks" class="catlinks catlinks-allhidden"></div>				<!-- /catlinks -->
+												<div class="visualClear"></div>
+				<!-- debughtml -->
+								<!-- /debughtml -->
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+		<!-- header -->
+		<div id="mw-head" class="noprint">
+			
+<!-- 0 -->
+<div id="p-personal" class="">
+	<h5>Personal tools</h5>
+	<ul>
+		<li id="pt-userpage"><a href="https://hips-tools.sourceforge.net/wiki/index.php/User:Wasaki" class="new" title="Your user page [ctrl-option-.]" accesskey=".">Wasaki</a></li>
+		<li id="pt-mytalk"><a href="https://hips-tools.sourceforge.net/wiki/index.php/User_talk:Wasaki" class="new" title="Your talk page [ctrl-option-n]" accesskey="n">My talk</a></li>
+		<li id="pt-preferences"><a href="https://hips-tools.sourceforge.net/wiki/index.php/Special:Preferences" title="Your preferences">My preferences</a></li>
+		<li id="pt-watchlist"><a href="https://hips-tools.sourceforge.net/wiki/index.php/Special:Watchlist" title="A list of pages you are monitoring for changes [ctrl-option-l]" accesskey="l">My watchlist</a></li>
+		<li id="pt-mycontris"><a href="https://hips-tools.sourceforge.net/wiki/index.php/Special:Contributions/Wasaki" title="A list of your contributions [ctrl-option-y]" accesskey="y">My contributions</a></li>
+		<li id="pt-logout"><a href="https://hips-tools.sourceforge.net/wiki/index.php?title=Special:UserLogout&amp;returnto=Users+Manual+%28en%29+for+1.x" title="Log out">Log out</a></li>
+	</ul>
+</div>
+
+<!-- /0 -->
+			<div id="left-navigation">
+				
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>Namespaces</h5>
+	<ul>
+					<li id="ca-nstab-main" class="selected"><span><a href="https://hips-tools.sourceforge.net/wiki/index.php/Users_Manual_(en)_for_1.x" title="View the content page [ctrl-option-c]" accesskey="c">Page</a></span></li>
+					<li id="ca-talk" class="new"><span><a href="https://hips-tools.sourceforge.net/wiki/index.php?title=Talk:Users_Manual_(en)_for_1.x&amp;action=edit&amp;redlink=1" title="Discussion about the content page [ctrl-option-t]" accesskey="t">Discussion</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu emptyPortlet">
+		<h5><span>Variants</span><a href="https://hips-tools.sourceforge.net/wiki/index.php/Users_Manual_(en)_for_1.x#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+			</div>
+			<div id="right-navigation">
+				
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>Views</h5>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="https://hips-tools.sourceforge.net/wiki/index.php/Users_Manual_(en)_for_1.x">Read</a></span></li>
+					<li id="ca-edit"><span><a href="https://hips-tools.sourceforge.net/wiki/index.php?title=Users_Manual_(en)_for_1.x&amp;action=edit" title="You can edit this page. Please use the preview button before saving [ctrl-option-e]" accesskey="e">Edit</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="https://hips-tools.sourceforge.net/wiki/index.php?title=Users_Manual_(en)_for_1.x&amp;action=history" title="Past revisions of this page [ctrl-option-h]" accesskey="h">View history</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu">
+	<h5><span>Actions</span><a href="https://hips-tools.sourceforge.net/wiki/index.php/Users_Manual_(en)_for_1.x#"></a></h5>
+	<div class="menu">
+		<ul>
+							<li id="ca-delete"><a href="https://hips-tools.sourceforge.net/wiki/index.php?title=Users_Manual_(en)_for_1.x&amp;action=delete" title="Delete this page [ctrl-option-d]" accesskey="d">Delete</a></li>
+							<li id="ca-move"><a href="https://hips-tools.sourceforge.net/wiki/index.php/Special:MovePage/Users_Manual_(en)_for_1.x" title="Move this page [ctrl-option-m]" accesskey="m">Move</a></li>
+							<li id="ca-protect"><a href="https://hips-tools.sourceforge.net/wiki/index.php?title=Users_Manual_(en)_for_1.x&amp;action=protect" title="Protect this page [ctrl-option-=]" accesskey="=">Protect</a></li>
+							<li id="ca-watch"><a href="https://hips-tools.sourceforge.net/wiki/index.php?title=Users_Manual_(en)_for_1.x&amp;action=watch&amp;token=98165d18890700b303c36cdac0f9e820%2B%5C" title="Add this page to your watchlist [ctrl-option-w]" accesskey="w">Watch</a></li>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search">
+	<h5><label for="searchInput">Search</label></h5>
+	<form action="https://hips-tools.sourceforge.net/wiki/index.php" id="searchform">
+		<input type="hidden" name="title" value="Special:Search">
+				<input type="search" name="search" title="Search HiPS tools [ctrl-option-f]" accesskey="f" id="searchInput" tabindex="1" autocomplete="off">		<input type="submit" name="go" value="Go" title="Go to a page with this exact name if exists" id="searchGoButton" class="searchButton">		<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton">			</form>
+</div>
+
+<!-- /2 -->
+			</div>
+		</div>
+		<!-- /header -->
+		<!-- panel -->
+			<div id="mw-panel" class="noprint collapsible-nav">
+				<!-- logo -->
+					<div id="p-logo"><a style="background-image: url(/wiki/skins/common/images/HiPS_icon-128x128.png);" href="https://hips-tools.sourceforge.net/wiki/index.php/Main_Page" title="Visit the main page"></a></div>
+				<!-- /logo -->
+				
+<!-- navigation -->
+<div class="portal first persistent" id="p-navigation">
+	<h5>Navigation</h5>
+	<div class="body">
+		<ul>
+			<li id="n-mainpage-description"><a href="https://hips-tools.sourceforge.net/wiki/index.php/Main_Page" title="Visit the main page [ctrl-option-z]" accesskey="z">Main page</a></li>
+			<li id="n-portal"><a href="https://hips-tools.sourceforge.net/wiki/index.php/HiPS_tools:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+			<li id="n-currentevents"><a href="https://hips-tools.sourceforge.net/wiki/index.php/HiPS_tools:Current_events" title="Find background information on current events">Current events</a></li>
+			<li id="n-recentchanges"><a href="https://hips-tools.sourceforge.net/wiki/index.php/Special:RecentChanges" title="A list of recent changes in the wiki [ctrl-option-r]" accesskey="r">Recent changes</a></li>
+			<li id="n-randompage"><a href="https://hips-tools.sourceforge.net/wiki/index.php/Special:Random" title="Load a random page [ctrl-option-x]" accesskey="x">Random page</a></li>
+			<li id="n-help"><a href="https://hips-tools.sourceforge.net/wiki/index.php/Help:Contents" title="The place to find out">Help</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /navigation -->
+
+<!-- SEARCH -->
+
+<!-- /SEARCH -->
+
+<!-- TOOLBOX -->
+<div class="portal expanded" id="p-tb">
+	<h5 tabindex="2">Toolbox</h5>
+	<div class="body" style="display: block;">
+		<ul>
+			<li id="t-whatlinkshere"><a href="https://hips-tools.sourceforge.net/wiki/index.php/Special:WhatLinksHere/Users_Manual_(en)_for_1.x" title="A list of all wiki pages that link here [ctrl-option-j]" accesskey="j">What links here</a></li>
+			<li id="t-recentchangeslinked"><a href="https://hips-tools.sourceforge.net/wiki/index.php/Special:RecentChangesLinked/Users_Manual_(en)_for_1.x" title="Recent changes in pages linked from this page [ctrl-option-k]" accesskey="k">Related changes</a></li>
+			<li id="t-upload"><a href="https://hips-tools.sourceforge.net/wiki/index.php/Special:Upload" title="Upload files [ctrl-option-u]" accesskey="u">Upload file</a></li>
+			<li id="t-specialpages"><a href="https://hips-tools.sourceforge.net/wiki/index.php/Special:SpecialPages" title="A list of all special pages [ctrl-option-q]" accesskey="q">Special pages</a></li>
+			<li><a href="https://hips-tools.sourceforge.net/wiki/index.php?title=Users_Manual_(en)_for_1.x&amp;printable=yes" rel="alternate">Printable version</a></li>
+			<li id="t-permalink"><a href="https://hips-tools.sourceforge.net/wiki/index.php?title=Users_Manual_(en)_for_1.x&amp;oldid=389" title="Permanent link to this revision of the page">Permanent link</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /TOOLBOX -->
+
+<!-- LANGUAGES -->
+
+<!-- /LANGUAGES -->
+			</div>
+		<!-- /panel -->
+		<!-- footer -->
+		<div id="footer">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on March 2, 2016, at 12:16.</li>
+											<li id="footer-info-viewcount">This page has been accessed 873 times.</li>
+											<li id="footer-info-copyright">Content is available under <a class="external" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution Non-Commercial Share Alike</a>.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://hips-tools.sourceforge.net/wiki/index.php/HiPS_tools:Privacy_policy" title="HiPS tools:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="https://hips-tools.sourceforge.net/wiki/index.php/HiPS_tools:About" title="HiPS tools:About">About HiPS tools</a></li>
+											<li id="footer-places-disclaimer"><a href="https://hips-tools.sourceforge.net/wiki/index.php/HiPS_tools:General_disclaimer" title="HiPS tools:General disclaimer">Disclaimers</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+					<li id="footer-copyrightico">
+						<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img src="./Users Manual (en) for 1.x_files/cc-by-nc-sa.png" alt="Creative Commons Attribution Non-Commercial Share Alike" width="88" height="31"></a>
+					</li>
+					<li id="footer-poweredbyico">
+						<a href="http://www.mediawiki.org/"><img src="./Users Manual (en) for 1.x_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31"></a>
+						<a href="http://sourceforge.net/projects/hips-tools/"><img src="./Users Manual (en) for 1.x_files/sflogo.php" alt="Get myproject at SourceForge.net. Fast, secure and Free Open Source software downloads" width="88" height="31"></a>
+					</li>
+				</ul>
+						<div style="clear:both"></div>
+		</div>
+		<!-- /footer -->
+		<!-- fixalpha -->
+		<script type="text/javascript"> if ( window.isMSIE55 ) fixalpha(); </script>
+		<!-- /fixalpha -->
+		<script src="./Users Manual (en) for 1.x_files/load(4).php"></script>
+<script>if(window.mw){
+	mw.loader.load(["mediawiki.user", "mediawiki.util", "mediawiki.page.ready", "mediawiki.legacy.wikibits", "mediawiki.legacy.ajax", "mediawiki.action.watch.ajax", "ext.vector.collapsibleNav", "ext.vector.collapsibleTabs", "ext.vector.simpleSearch"]);
+}
+</script><script type="text/javascript" src="./Users Manual (en) for 1.x_files/load(5).php"></script><script type="text/javascript" src="./Users Manual (en) for 1.x_files/load(6).php"></script>
+<script>if(window.mw){
+	mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"mdy","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"highlightbroken":1,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":"1","rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,
+	"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"vector-simplesearch":1,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"nickname":"","timecorrection":"ZoneInfo|540|Asia/Tokyo","watchlisttoken":""});;mw.user.tokens.set({"editToken":"ed25b40c77639849e1a9ec333e21f012+\\","watchToken":"5dee6aa0c5477b71dd613bed55da4229+\\"});;mw.loader.state({"user.options":"ready","user.tokens":"ready"});
+	
+	/* cache key: h742094_hips-tools:resourceloader:filter:minify-js:4:cdbd0cae84f1e555721a006068ac0d7a */
+}
+</script><!-- Served in 0.209 secs. -->
+	
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+  div.grammarly-desktop-integration {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+  }
+
+  div.grammarly-desktop-integration:before {
+    content: attr(data-content);
+  }
+</style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
