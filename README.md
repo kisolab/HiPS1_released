@@ -10,7 +10,6 @@ functioned of static/dynamic analysis: T-invariant detection, Reachability
 path analysis, deadlock state detection, and k-boundedness analysis. Also, 
 it is possible to perform a random walk simulation with each firing steps.
 
-- GitHub https://github.com/kisolab/HiPS1_released/
 - SourceForge http://sourceforge.net/projects/hips-tools/
 - introduction video https://youtu.be/usF1JrQegOE
 
@@ -23,7 +22,9 @@ it is possible to perform a random walk simulation with each firing steps.
   (Partially) Conservative, (Partially) Repetitive, and (Partially) Consistent)
 - Subclass structure detection with known reachability criteria: FCF, BCF, NDC, NIC, TC, SC, TCC and SCC
 - Structure Detection Function for Potential L3/L2 Liveness
-- Behavioral Analysis for P/T-net (Reachability, Deadlock, Reversibility and 
+- Behavioral Analysis for bounded P/T-net (Reachability, Deadlock, Reversibility and 
+  Synchronic Distances)
+- Behavioral Analysis for unbounded P/T-net (Coverability Graphs, Extended Cyclic CRTs Analysis, Partial Deadlock Detection and 
   Synchronic Distances)
 - Liveness and Safeness Properties Checking for Free-Choice (Subclass) net
 - Process Trace Graph Generator using High Speed and Memory Efficiency Algorithm
@@ -33,7 +34,7 @@ it is possible to perform a random walk simulation with each firing steps.
 
 ## Documentation / samples
 
-- users manual : https://github.com/kisolab/HiPS1_released/tree/master/Documents
+- users manual : http://hips-tools.sourceforge.net/wiki/index.php/Users_Manual_(en)_for_1.x
 - model examples : https://sourceforge.net/projects/hips-tools/files/version%201.x/examples/
 
 ## Installation instructions
